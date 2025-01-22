@@ -34,6 +34,9 @@ export default {
           },
         },
       },
+      translate: {
+        "10": "10px", // Matches `translate-y-10`
+      },
       animation: {
         'expand-left':  'expand-left 1s ease-out forwards',
         'expand-right': 'expand-right 1s ease-out forwards',
