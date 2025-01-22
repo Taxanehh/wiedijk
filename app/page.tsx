@@ -2,100 +2,352 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="
+      scrollbar-thin
+      scroll-smooth
+      scrollbar-thumb-gray-400
+      scrollbar-track-gray-200
+      grid grid-rows-[20px_1fr_20px]
+      items-center
+      justify-items-center
+      min-h-screen
+      p-8
+      pb-20
+      gap-16
+      sm:p-20
+      font-mono
+    ">
+      {/* FontAwesome */}
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* NAVIGATION */}
+      <nav>
+        <ul className="relative right-[40px] flex space-x-44 mt-[-60px]">
+          <li className="animate-fadein opacity-0 relative -top-2 font-semibold text-[16px] leading-[19px] tracking-[0.15em] text-[#FFEFCA]" style={{ animationDelay: `${2}s` }}>
+            <a href="#">
+              <Image src="/logo.png" alt="logo" width={140} height={140} />
+            </a>
+          </li>
+          <li className="animate-fadein w-[46px] font-semibold text-[16px] leading-[19px] tracking-[0.15em] text-[#FFEFCA] opacity-0" style={{ animationDelay: `${2}s` }}>
+            <a href="#">HOME</a>
+          </li>
+          <li className="animate-fadein opacity-0 w-[106px] font-semibold text-[16px] leading-[19px] tracking-[0.15em] text-[#FFEFCA]" style={{ animationDelay: `${2}s` }}>
+            <a href="#">PROJECTEN</a>
+          </li>
+          <li className="animate-fadein opacity-0 w-[70px] font-semibold text-[16px] leading-[19px] tracking-[0.15em] text-[#FFEFCA]" style={{ animationDelay: `${2}s` }}>
+            <a href="#">AGENDA</a>
+          </li>
+          <li className="animate-fadein opacity-0 w-[104px] font-semibold text-[16px] leading-[19px] tracking-[0.15em] text-[#FFEFCA]" style={{ animationDelay: `${2}s` }}>
+            <a href="#">OVER ONS</a>
+          </li>
+          <li className="animate-fadein opacity-0 w-[82px] font-semibold text-[16px] leading-[19px] tracking-[0.15em] text-[#FFEFCA]" style={{ animationDelay: `${2}s` }}>
+            <a href="#">CONTACT</a>
+          </li>
+          <li className="animate-fadein opacity-0 w-[140px] font-semibold text-[16px] leading-[19px] tracking-[0.15em] text-[#FFEFCA]" style={{ animationDelay: `${2}s` }}>
+            <a href="#">PRODUCTEN 0</a>
+          </li>
+        </ul>
+      </nav>
+
+      {/* HERO TEXT */}
+      <div className="mt-[100px]">
+        <div
+          className="
+            relative
+            right-[120px]
+            top-[10px]
+            text-[10rem]
+            font-semibold
+            leading-[10rem]
+            text-[#FFEFCA]
+            flex flex-wrap items-center justify-center
+          "
+        >
+          {/* First Line: "WONING &" */}
+          <h1 className="relative left-[20px] inline-block opacity-0 animate-fadeInSlideUp" style={{ animationDelay: `1.8s` }}>
+            W
+          </h1>
+          <h1 className="relative left-[20px] inline-block opacity-0 animate-fadeInSlideUp" style={{ animationDelay: `1.7s` }}>
+            O
+          </h1>
+          <h1 className="relative left-[20px] inline-block opacity-0 animate-fadeInSlideUp" style={{ animationDelay: `1.6s` }}>
+            N
+          </h1>
+          <h1 className="relative left-[20px] inline-block opacity-0 animate-fadeInSlideUp" style={{ animationDelay: `1.5s` }}>
+            I
+          </h1>
+          <h1 className="relative left-[20px] inline-block opacity-0 animate-fadeInSlideUp" style={{ animationDelay: `1.2s` }}>
+            N
+          </h1>
+          <h1 className="relative left-[20px] inline-block opacity-0 animate-fadeInSlideUp" style={{ animationDelay: `1.5s` }}>
+            G
+          </h1>
+          <h1 className="relative left-[100px] inline-block opacity-0 animate-fadeInSlideUp" style={{ animationDelay: `1.6s` }}>
+            & {/* Fastest, no delay */}
+          </h1>
+
+          {/* Second Line: "PROJECT STOFFERING" */}
+          <h1 className="relative top-[150px] right-[600px] inline-block opacity-0 animate-fadeInSlideUp" style={{ animationDelay: `1.65s` }}>
+            P
+          </h1>
+          <h1 className="relative top-[150px] right-[600px] inline-block opacity-0 animate-fadeInSlideUp" style={{ animationDelay: `1.55s` }}>
+            R
+          </h1>
+          <h1 className="relative top-[150px] right-[600px] inline-block opacity-0 animate-fadeInSlideUp" style={{ animationDelay: `1.45s` }}>
+            O
+          </h1>
+          <h1 className="relative top-[150px] right-[600px] inline-block opacity-0 animate-fadeInSlideUp" style={{ animationDelay: `1.35s` }}>
+            J
+          </h1>
+          <h1 className="relative top-[150px] right-[600px] inline-block opacity-0 animate-fadeInSlideUp" style={{ animationDelay: `1.25s` }}>
+            E
+          </h1>
+          <h1 className="relative top-[150px] right-[600px] inline-block opacity-0 animate-fadeInSlideUp" style={{ animationDelay: `1.35s` }}>
+            C
+          </h1>
+          <h1 className="relative top-[150px] right-[600px] inline-block opacity-0 animate-fadeInSlideUp" style={{ animationDelay: `1.45s` }}>
+            T
+          </h1>
+          <h1 className="relative top-[150px] right-[600px] inline-block opacity-0 animate-fadeInSlideUp" style={{ animationDelay: `1.55s` }}>
+            S
+          </h1>
+          <h1 className="relative top-[150px] right-[600px] inline-block opacity-0 animate-fadeInSlideUp" style={{ animationDelay: `1.65s` }}>
+            T
+          </h1>
+          <h1 className="relative top-[150px] right-[600px] inline-block opacity-0 animate-fadeInSlideUp" style={{ animationDelay: `1.75s` }}>
+            O
+          </h1>
+          <h1 className="relative top-[150px] right-[600px] inline-block opacity-0 animate-fadeInSlideUp" style={{ animationDelay: `1.85s` }}>
+            F
+          </h1>
+          <h1 className="relative top-[150px] right-[600px] inline-block opacity-0 animate-fadeInSlideUp" style={{ animationDelay: `1.95s` }}>
+            F
+          </h1>
+          <h1 className="relative left-[450px] bottom-[10px] inline-block opacity-0 animate-fadeInSlideUp" style={{ animationDelay: `2.05s` }}>
+            E
+          </h1>
+          <h1 className="relative left-[450px] bottom-[10px] inline-block opacity-0 animate-fadeInSlideUp" style={{ animationDelay: `2.15s` }}>
+            R
+          </h1>
+          <h1 className="relative left-[450px] bottom-[10px] inline-block opacity-0 animate-fadeInSlideUp" style={{ animationDelay: `2.25s` }}>
+            I
+          </h1>
+          <h1 className="relative left-[450px] bottom-[10px] inline-block opacity-0 animate-fadeInSlideUp" style={{ animationDelay: `2.35s` }}>
+            N
+          </h1>
+          <h1 className="relative left-[450px] bottom-[10px] inline-block opacity-0 animate-fadeInSlideUp" style={{ animationDelay: `2.45s` }}>
+            G
+          </h1>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <h2 className="
+          relative
+          left-[200px]
+          top-[100px]
+          text-[16px]
+          font-medium
+          text-[#FFEFCA]
+          animate-fadein opacity-0
+        " style={{ animationDelay: `${2}s` }}>
+          Wij helpen uw ruimtes tot leven komen met stofferingen,
+        </h2>
+        <h2 className="
+          relative
+          left-[150px]
+          top-[100px]
+          text-[16px]
+          font-medium
+          text-[#FFEFCA]
+          animate-fadein opacity-0
+        " style={{ animationDelay: `${2}s` }}>
+          afgestemd op stijl en functionaliteit.
+        </h2>
+        <h2 className="
+          relative
+          left-[950px]
+          top-[52px]
+          text-[16px]
+          tracking-[0.15rem]
+          font-semibold
+          text-[#FFEFCA]
+          animate-fadein opacity-0
+        " style={{ animationDelay: `${2}s` }}>
+          GEMAAKT OP MAAT
+        </h2>
+        <h2 className="
+          relative
+          left-[1300px]
+          top-[26px]
+          text-[16px]
+          tracking-[0.15rem]
+          font-medium
+          text-[#FFEFCA]
+          animate-fadein opacity-0
+        " style={{ animationDelay: `${2}s` }}>
+          VAKMANSCHAP SINDS 2014 <br />
+          BETROUWBAAR EN ERKEND
+        </h2>
+        <Image
+          className="
+            relative
+            left-[1600px]
+            bottom-[34px]
+            tracking-[0.15rem]
+            font-medium
+            text-[#FFEFCA]
+            animate-fadein opacity-0
+          "
+          src="/logo2.png"
+          alt="logo"
+          width={100}
+          height={100}
+          style={{ animationDelay: `${2}s` }}
+        />
+      </div>
+
+      {/* BOTTOM BAR */}
+      <div className="
+        fixed
+        bottom-0
+        left-0
+        w-full
+        bg-[#0E0E10]
+        shadow-lg
+        z-50
+        flex
+        items-center
+        justify-between
+        border-t
+        border-gray-800
+        px-8
+        py-4
+      ">
+        <div className="text-sm text-gray-500 pr-4 border-r border-gray-800">
+          <span className="font-medium">Page: <br /></span>
+          <p className="font-extrabold text-[#FFEFCA]">Woning & Projectstoffering</p>
+        </div>
+        <div className="flex space-x-4">
+          <button className="
+            px-4
+            py-2
+            text-[#0E0E10]
+            bg-[#FFEFCA]
+            hover:bg-[#0E0E10]
+            hover:text-[#FFEFCA]
+          ">
+            Chat Online <i className="fa fa-wechat"></i>
+          </button>
+          <button className="
+            px-4
+            py-2
+            border
+            bg-[#0E0E10]
+            text-[#FFEFCA]
+            hover:bg-[#FFEFCA]
+            hover:text-[#0E0E10]
+          ">
+            Vraag een offerte aan
+          </button>
+        </div>
+      </div>
+
+      {/* BACKGROUND + NEW SECTIONS */}
+      <div className="relative overflow-x-hidden top-[500px] mt-[85vh]">
+        {/* FULL-SCREEN BACKGROUND SECTION */}
+        <section className="relative h-screen w-screen animate-fadein opacity-0" style={{ animationDelay: `${2}s` }}>
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/background.png"
+            alt="Background"
+            fill
+            className="object-cover"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <div className="z-10 relative flex h-full items-center justify-center">
+            <h2 className="
+              z-10
+              text-[16px]
+              text-[#FFEFCA]
+              relative
+              left-[280px]
+              top-[-360px]
+            ">
+              BEDRIJF WIEDIJK
+            </h2>
+          </div>
+        </section>
+
+        {/* UITGELICHTE PROJECTEN SECTION */}
+        <section className="py-20 px-8 text-black border-t border-gray-800">
+          <h3 className="
+            relative
+            right-[10px]
+            top-[-60px]
+            text-[6rem]
+            font-semibold
+            leading-[6rem]
+            text-[#FFEFCA]
+          ">
+            UITGELICHTE <br />
+            PROJECTEN
+          </h3>
+          <p className="
+            relative
+            left-[1100px]
+            top-[-240px]
+            text-[16px]
+            font-medium
+            text-[#FFEFCA]
+          ">
+            Onze op maat gemaakte stofferingsoplossingen <br />
+            brengen ruimtes tot leven. Functioneel en <br />
+            stijlvol, ontworpen om zowel comfort als <br />
+            een unieke uitstraling te bieden <br />
+          </p>
+          <button className="
+            rounded-full
+            border-2
+            border-[#FFEFCA]
+            px-4
+            py-2
+            text-[#FFEFCA]
+            bg-[#0E0E10]
+            hover:bg-[#FFEFCA]
+            hover:text-[#0E0E10]
+            relative
+            top-[-210px]
+            left-[1100px]
+          ">
+            ALLE PROJECTEN <i className="text-gray-500">BEKIJKEN</i>
+          </button>
+        </section>
+
+        {/* FINAL SECTION */}
+        <section className="py-20 px-8 text-black border-t border-gray-800">
+          <h3 className="
+            relative
+            right-[10px]
+            top-[-100px]
+            text-[1rem]
+            font-semibold
+            leading-[6rem]
+            text-gray-500
+          ">
+            Project
+          </h3>
+          <h2 className="
+            relative
+            right-[10px]
+            top-[-160px]
+            text-[2rem]
+            font-semibold
+            leading-[6rem]
+            text-[#FFEFCA]
+          ">
+            Voor coke en beffe bel Nico effe
+          </h2>
+        </section>
+      </div>
     </div>
   );
 }
